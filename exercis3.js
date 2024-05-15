@@ -15,23 +15,8 @@ function greetAndAgeAll(name1, birthYear1, name2, birthYear2, name3, birthYear3)
 }
 
 // Challenge
-// Part 1
-const passes = score => score >= 5;
-
-// Part 2
-const isExcellent = score => {
-    if (score > 8) {
-        console.log("Excellent");
-        return true;
-    } 
-    return false;
-}
-
-// Part 3
-const isPerfect = score => {
-    if (score === 11) {
-        console.log("Perfect");
-        return true;
-    } 
-    return false;
+const grading = score => {
+    if (score === 11) console.log("Perfect");
+    else if (score > 8) console.log("Excellent");
+    return score >= 5;
 }
